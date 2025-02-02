@@ -38,12 +38,7 @@ const Login = () => {
     };
 
     const handleEmailRegister = async () => {
-        try {
-            await registerWithEmail(email, password);
-            setError(null);
-        } catch (error) {
-            setError(`Kayıt hatası: ${error.message}`);
-        }
+        router.push('/register');
     };
 
     return (
